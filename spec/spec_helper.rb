@@ -73,7 +73,7 @@ RSpec.configure do |config|
   end
 =end
 end
-binding.pry
+
 def hint(number)
   Proc.new{YAML.load_file('./.hints')[number]}
 end
