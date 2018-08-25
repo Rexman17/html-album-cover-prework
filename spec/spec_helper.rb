@@ -84,6 +84,7 @@ end
 
 def parsed_html
   Nokogiri::HTML(html_file_contents) do |config|
+    binding.pry
     config.strict.dtdload.dtdvalid.noblanks
   end
 end
